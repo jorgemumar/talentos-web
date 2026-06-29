@@ -6,6 +6,8 @@ import { Headhunting } from "@/components/site/headhunting";
 import { GestionDesempeno } from "@/components/site/gestion-desempeno";
 import { DesarrolloHumano } from "@/components/site/desarrollo-humano";
 import { Diferenciadores } from "@/components/site/diferenciadores";
+import { CostoOportunidad } from "@/components/site/costo-oportunidad";
+import { Audiencia } from "@/components/site/audiencia";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <GestionDesempeno />
         <DesarrolloHumano />
         <Diferenciadores />
+        <CostoOportunidad />
+        <Audiencia />
       </main>
     </>
   );
