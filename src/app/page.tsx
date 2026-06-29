@@ -8,6 +8,8 @@ import { DesarrolloHumano } from "@/components/site/desarrollo-humano";
 import { Diferenciadores } from "@/components/site/diferenciadores";
 import { CostoOportunidad } from "@/components/site/costo-oportunidad";
 import { Audiencia } from "@/components/site/audiencia";
+import { CtaContacto } from "@/components/site/cta-contacto";
+import { SiteFooter } from "@/components/site/site-footer";
 
 export default function Home() {
   return (
@@ -23,7 +25,9 @@ export default function Home() {
         <Diferenciadores />
         <CostoOportunidad />
         <Audiencia />
+        <CtaContacto />
       </main>
+      <SiteFooter />
     </>
   );
 }
