@@ -33,7 +33,12 @@
       "Bash(cp __TRACKED_VAR__/img_favicon.png src/app/icon.png)",
       "Bash(git checkout *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "mcp__shadcnio__list_block_categories",
+      "mcp__shadcnio__get_item_source",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"compile: %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"http %{http_code}\\\\n\" http://localhost:3000/)"
     ]
   }
 }
