@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
+import { ChevronDown, MousePointerClick } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { LEVELS } from "@/lib/headhunting-data";
@@ -30,7 +31,13 @@ export function LevelTabs() {
 
   return (
     <div className="mt-10">
-      {/* Tabbar */}
+      {/* Pista de clicabilidad: este flujo es pesado, se abre con clic */}
+      <div className="mb-3 flex items-center gap-1.5 text-[0.78rem] font-medium text-muted-ink">
+        <MousePointerClick className="size-3.5 text-electric" />
+        Toca un nivel para ver su flujo completo
+      </div>
+
+      {/* Tabbar (clic, no hover) */}
       <div className="inline-flex flex-wrap gap-1 rounded-[14px] border border-noche/10 bg-white p-1.5">
         {LEVELS.map((l) => {
           const on = l.id === active;
@@ -40,22 +47,31 @@ export function LevelTabs() {
               type="button"
               onClick={() => setActive(l.id)}
               aria-pressed={on}
+              aria-expanded={on}
               className={cn(
-                "flex flex-col gap-px rounded-[10px] px-5 py-2.5 text-left text-[0.95rem] font-semibold transition-colors",
+                "flex cursor-pointer items-start gap-2 rounded-[10px] px-5 py-2.5 text-left text-[0.95rem] font-semibold transition-colors",
                 on
                   ? "bg-noche text-white"
-                  : "text-muted-ink hover:text-noche",
+                  : "text-muted-ink hover:bg-noche/[0.04] hover:text-noche",
               )}
             >
-              {l.tab}
-              <small
+              <span className="flex flex-col gap-px">
+                {l.tab}
+                <small
+                  className={cn(
+                    "text-[0.72rem] font-medium",
+                    on ? "text-white/70" : "text-muted-ink/70",
+                  )}
+                >
+                  {l.sub}
+                </small>
+              </span>
+              <ChevronDown
                 className={cn(
-                  "text-[0.72rem] font-medium",
-                  on ? "text-white/70" : "text-muted-ink/70",
+                  "mt-0.5 size-4 shrink-0 transition-all duration-200",
+                  on ? "rotate-180 text-white" : "text-muted-ink/45",
                 )}
-              >
-                {l.sub}
-              </small>
+              />
             </button>
           );
         })}

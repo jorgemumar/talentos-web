@@ -7,14 +7,14 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURICo
   WHATSAPP_MSG,
 )}`;
 
-export const LINKEDIN_URL = "https://www.linkedin.com/company/talentos";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/taletnos";
 export const SITIO_URL = "https://talentos.work";
 
 export const NAV_ITEMS = [
   { label: "El sistema", href: "#sistema" },
   { label: "Headhunting", href: "#hh" },
-  { label: "Servicios", href: "#diferenciadores" },
-  { label: "Por qué invertir", href: "#costo" },
+  { label: "Gestión del Desempeño", href: "#gdi" },
+  { label: "Desarrollo Humano", href: "#dh" },
 ] as const;
 
 export type HeroStat = {
