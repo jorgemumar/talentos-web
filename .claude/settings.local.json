@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NF')",
+      "Bash(perl -0777 -ne 'while\\(/<script[^>]*>\\(.*?\\)<\\\\/script>/gs\\){print \"$1\\\\n---\\\\n\"}' 'talentos_landing_v7 \\(3\\).html')",
+      "Bash(perl -0777 -ne 'while\\(/<script[^>]*>\\(.*?\\)<\\\\/script>/gs\\){print \"$1\\\\n\"}' 'talentos_landing_v7 \\(3\\).html')",
+      "Bash(perl -0777 -ne 'while\\(/\\(<[^>]*\\\\bdata-p=\"[^\"]*\"[^>]*>\\)/g\\){print \"$1\\\\n\"}' 'talentos_landing_v7 \\(3\\).html')",
+      "Bash(npm -v)",
+      "Bash(echo \"npm: $\\(npm -v 2>/dev/null || echo MISSING\\)\")",
+      "Bash(pnpm -v)",
+      "Bash(echo \"pnpm: $\\(pnpm -v 2>/dev/null || echo none\\)\")",
+      "Bash(npx --version)",
+      "mcp__shadcnio__list_blocks_in_category",
+      "mcp__shadcnio__get_item_details",
+      "mcp__shadcnio__search_items",
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack --yes)"
+    ]
+  }
+}
