@@ -13,7 +13,26 @@
       "mcp__shadcnio__list_blocks_in_category",
       "mcp__shadcnio__get_item_details",
       "mcp__shadcnio__search_items",
-      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack --yes)"
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack --yes)",
+      "Bash(node -e \"const p=require\\('./package.json'\\);console.log\\(JSON.stringify\\({...p.dependencies,...p.devDependencies},null,1\\)\\)\")",
+      "Bash(grep -vE '^\\\\.$|^\\\\.\\\\.$|node_modules')",
+      "Bash(mv __TRACKED_VAR__/reference_bak reference)",
+      "Bash(npx --yes shadcn@latest init -b neutral -y)",
+      "Bash(npx --yes shadcn@latest init --help)",
+      "Bash(npx --yes shadcn@latest init -b radix -y -f)",
+      "Bash(npx --yes shadcn@latest init -d -f)",
+      "mcp__shadcnio__get_preview_url",
+      "Bash(node -e \"const p=require\\('./package.json'\\);console.log\\('lucide-react:', \\(p.dependencies||{}\\)['lucide-react']||'MISSING'\\); console.log\\('motion:', \\(p.dependencies||{}\\)['motion']||'MISSING'\\)\")",
+      "Bash(npm install *)",
+      "Bash(node -e \"console.log\\('motion:', require\\('./package.json'\\).dependencies.motion||'MISSING'\\)\")",
+      "Bash(npx tsc *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cp __TRACKED_VAR__/img_logo-a.png public/talentos-logo.png)",
+      "Bash(cp __TRACKED_VAR__/img_iso.png public/talentos-iso-white.png)",
+      "Bash(cp __TRACKED_VAR__/img_favicon.png public/talentos-iso.png)",
+      "Bash(cp __TRACKED_VAR__/img_favicon.png src/app/icon.png)",
+      "Bash(git checkout *)",
+      "Bash(git add *)"
     ]
   }
 }
