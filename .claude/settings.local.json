@@ -32,7 +32,8 @@
       "Bash(cp __TRACKED_VAR__/img_favicon.png public/talentos-iso.png)",
       "Bash(cp __TRACKED_VAR__/img_favicon.png src/app/icon.png)",
       "Bash(git checkout *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
