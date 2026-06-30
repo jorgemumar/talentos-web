@@ -43,7 +43,11 @@
       "Bash(curl -s -o /dev/null -w \"localhost:3000 -> %{http_code}\\\\n\" http://localhost:3000/)",
       "Bash(curl -s -o /dev/null -w \"127.0.0.1:3000 -> %{http_code}\\\\n\" http://127.0.0.1:3000/)",
       "Bash(lsof -nP -iTCP -sTCP:LISTEN)",
-      "Bash(curl -s http://localhost:3000/)"
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(npm run *)",
+      "Bash(command -v gh)",
+      "Bash(gh --version)",
+      "Bash(git merge *)"
     ]
   }
 }
