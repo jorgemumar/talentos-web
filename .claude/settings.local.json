@@ -47,7 +47,13 @@
       "Bash(npm run *)",
       "Bash(command -v gh)",
       "Bash(gh --version)",
-      "Bash(git merge *)"
+      "Bash(git merge *)",
+      "Bash(git config *)",
+      "Read(//Users/jorgemunoz/**)",
+      "Bash(git --version)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(curl -s -o /dev/null -w \"recompilado http %{http_code}\\\\n\" http://localhost:3000/)"
     ]
   }
 }

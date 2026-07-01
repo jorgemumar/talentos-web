@@ -2,6 +2,7 @@ import { MessageCircle } from "lucide-react";
 
 import { Eyebrow } from "@/components/site/eyebrow";
 import { Reveal } from "@/components/site/reveal";
+import { ContactForm } from "@/components/site/contact-form";
 import { LINKEDIN_URL, WHATSAPP_URL } from "@/lib/site";
 
 function LinkedInIcon({ className }: { className?: string }) {
@@ -24,7 +25,7 @@ export function CtaContacto() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(60% 60% at 50% 0%, rgba(27,79,220,0.35), transparent 60%)",
+            "radial-gradient(55% 55% at 20% 0%, rgba(27,79,220,0.35), transparent 60%)",
         }}
       />
       <div
@@ -32,56 +33,63 @@ export function CtaContacto() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(40% 55% at 82% 100%, rgba(232,80,58,0.16), transparent 60%)",
+            "radial-gradient(45% 55% at 90% 100%, rgba(232,80,58,0.16), transparent 60%)",
         }}
       />
 
-      <div className="mx-auto w-full max-w-[1180px] px-5 py-28 text-center sm:px-8 lg:py-32">
-        <Reveal className="flex justify-center">
-          <Eyebrow onDark>Conversemos</Eyebrow>
-        </Reveal>
+      <div className="mx-auto grid w-full max-w-[1180px] items-center gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[1fr_0.9fr] lg:gap-16 lg:py-28">
+        {/* Mensaje + canales */}
+        <div>
+          <Reveal>
+            <Eyebrow onDark>Conversemos</Eyebrow>
+          </Reveal>
 
-        <Reveal
-          as="h2"
-          delay={0.08}
-          className="mx-auto mt-5 max-w-3xl font-heading text-[clamp(2.1rem,4.5vw,3.4rem)] font-semibold leading-[1.08] text-balance"
-        >
-          Instalemos el sistema operativo de tu talento.
-        </Reveal>
-
-        <Reveal
-          as="p"
-          delay={0.16}
-          className="mx-auto mt-5 max-w-[580px] text-pretty leading-relaxed text-white/75 sm:text-[1.12rem]"
-        >
-          Compartimos cómo se construye, se mide y se desarrolla talento en
-          empresas que crecen. Conéctate con nosotros y sigamos la conversación
-          ahí.
-        </Reveal>
-
-        <Reveal delay={0.24} className="mt-9 flex flex-wrap justify-center gap-3">
-          <a
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noopener"
-            className="inline-flex h-12 items-center gap-2 rounded-full bg-white px-7 text-[0.95rem] font-semibold text-noche shadow-[0_14px_30px_-10px_rgba(255,255,255,0.4)] transition-all hover:-translate-y-0.5 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30"
+          <Reveal
+            as="h2"
+            delay={0.08}
+            className="mt-5 max-w-xl font-heading text-[clamp(2rem,4vw,3.2rem)] font-semibold leading-[1.08] text-balance"
           >
-            <LinkedInIcon className="size-[17px]" />
-            Síguenos en LinkedIn
-          </a>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener"
-            className="inline-flex h-12 items-center gap-2 rounded-full border border-white/20 bg-white/[0.06] px-7 text-[0.95rem] font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:border-white/35 hover:bg-white/[0.12] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/20"
-          >
-            <MessageCircle className="size-4 text-menta" />
-            Quiero hablar con alguien
-          </a>
-        </Reveal>
+            Instalemos el sistema operativo de tu talento.
+          </Reveal>
 
-        <Reveal as="p" delay={0.3} className="mt-7 text-sm text-white/55">
-          Publicamos cómo pensamos el talento. Te leemos en los comentarios.
+          <Reveal
+            as="p"
+            delay={0.16}
+            className="mt-5 max-w-[520px] text-pretty leading-relaxed text-white/75 sm:text-[1.08rem]"
+          >
+            Empieza con un assessment sin costo: definimos el puesto, el
+            Scorecard y lo que ya te está costando no decidir. Sin compromiso.
+          </Reveal>
+
+          <Reveal delay={0.24} className="mt-8 flex flex-wrap gap-3">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex h-12 items-center gap-2 rounded-full bg-white px-6 text-[0.95rem] font-semibold text-noche transition-all hover:-translate-y-0.5 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30"
+            >
+              <MessageCircle className="size-[18px] text-menta" />
+              Escríbenos por WhatsApp
+            </a>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex h-12 items-center gap-2 rounded-full border border-white/20 bg-white/[0.06] px-6 text-[0.95rem] font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:border-white/35 hover:bg-white/[0.12] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/20"
+            >
+              <LinkedInIcon className="size-[17px]" />
+              Síguenos en LinkedIn
+            </a>
+          </Reveal>
+
+          <Reveal as="p" delay={0.3} className="mt-6 text-sm text-white/55">
+            Publicamos cómo pensamos el talento. Te leemos en los comentarios.
+          </Reveal>
+        </div>
+
+        {/* Formulario (alternativa a WhatsApp) */}
+        <Reveal delay={0.2}>
+          <ContactForm />
         </Reveal>
       </div>
     </section>

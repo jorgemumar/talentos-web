@@ -16,7 +16,7 @@ const COLS = [
     links: [
       { label: "El sistema", href: "#sistema" },
       { label: "Por qué TalentOS", href: "#diferenciadores" },
-      { label: "Por qué invertir", href: "#costo" },
+      { label: "El costo de no decidir", href: "#costo" },
     ],
   },
 ];

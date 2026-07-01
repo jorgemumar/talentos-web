@@ -28,7 +28,7 @@ export function CostoOportunidad() {
         {/* Encabezado */}
         <div className="mb-10 max-w-[740px]">
           <Reveal>
-            <Eyebrow>Costo de oportunidad</Eyebrow>
+            <Eyebrow>El costo de no decidir</Eyebrow>
           </Reveal>
           <Reveal
             as="h2"

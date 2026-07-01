@@ -43,7 +43,7 @@ export function CostCalculator() {
       <div className="grid items-center gap-9 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <div className="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#ff8062]">
-            Assessment · costo de oportunidad
+            Assessment · el costo de no decidir
           </div>
           <h3 className="mt-3 font-heading text-[clamp(1.5rem,2.6vw,2rem)] font-semibold">
             ¿Cuánto te cuesta no decidir bien?
