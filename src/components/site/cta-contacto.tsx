@@ -66,7 +66,20 @@ export function CtaContacto() {
           <Reveal
             as="p"
             delay={0.22}
-            className="mt-4 max-w-[520px] text-pretty leading-relaxed text-white/70"
+            className="mt-6 max-w-[540px] font-heading text-[clamp(1.3rem,2.6vw,1.75rem)] italic leading-[1.28] text-white text-pretty"
+          >
+            Ya decides sobre tu talento cada día. La única pregunta es si lo
+            haces con un sistema —o{" "}
+            <span className="font-semibold not-italic text-[#ff8062]">
+              a la suerte
+            </span>
+            .
+          </Reveal>
+
+          <Reveal
+            as="p"
+            delay={0.28}
+            className="mt-5 max-w-[520px] text-pretty leading-relaxed text-white/70"
           >
             Empieza con un assessment sin costo: en una llamada de 30 minutos
             definimos el puesto contigo, acordamos el Scorecard y te mostramos
@@ -74,7 +87,7 @@ export function CtaContacto() {
             dura.
           </Reveal>
 
-          <Reveal delay={0.3} className="mt-8 flex flex-wrap gap-3">
+          <Reveal delay={0.34} className="mt-8 flex flex-wrap gap-3">
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -95,7 +108,7 @@ export function CtaContacto() {
             </a>
           </Reveal>
 
-          <Reveal as="p" delay={0.36} className="mt-6 text-sm text-white/55">
+          <Reveal as="p" delay={0.4} className="mt-6 text-sm text-white/55">
             Publicamos cómo pensamos el talento. Te leemos en los comentarios.
           </Reveal>
         </div>

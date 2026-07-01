@@ -15,8 +15,9 @@ const COLS = [
     title: "Firma",
     links: [
       { label: "El sistema", href: "#sistema" },
-      { label: "Por qué TalentOS", href: "#diferenciadores" },
-      { label: "El costo de no decidir", href: "#costo" },
+      { label: "Cinco diferencias", href: "#diferenciadores" },
+      { label: "Costo de oportunidad", href: "#costo" },
+      { label: "Preguntas frecuentes", href: "#faq" },
     ],
   },
 ];
