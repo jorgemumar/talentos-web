@@ -19,7 +19,7 @@ export function GestionDesempeno() {
             <span className="font-heading text-[4.6rem] font-bold leading-[0.8] text-noche/10">
               02
             </span>
-            <span className="text-[0.74rem] font-bold uppercase tracking-[0.18em] text-[#0a9e85]">
+            <span className="text-[0.74rem] font-bold uppercase tracking-[0.18em] text-menta-ink">
               Medir
             </span>
           </Reveal>
@@ -33,7 +33,7 @@ export function GestionDesempeno() {
           </Reveal>
 
           <Reveal delay={0.14} className="mt-4">
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-menta/30 bg-menta/[0.12] px-3 py-1.5 text-[0.72rem] font-bold tracking-[0.04em] text-[#0a9e85]">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-menta/30 bg-menta/[0.12] px-3 py-1.5 text-[0.72rem] font-bold tracking-[0.04em] text-menta-ink">
               <span className="size-1.5 rounded-full bg-menta" />
               Metodología + capa de IA
             </span>
@@ -61,7 +61,7 @@ export function GestionDesempeno() {
         <div className="mt-12 grid grid-cols-1 gap-4 border-t border-noche/10 pt-8 sm:grid-cols-2">
           {FEATURES.map((f, i) => (
             <Reveal as="li" key={f} delay={0.1 + i * 0.07} className="flex list-none items-start gap-3">
-              <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-menta/15 text-menta">
+              <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-menta/15 text-menta-ink">
                 <Check className="size-3" strokeWidth={3} />
               </span>
               <span className="text-[0.98rem] text-ink">{f}</span>
@@ -73,7 +73,7 @@ export function GestionDesempeno() {
         <div className="mt-16 border-t border-noche/10 pt-14">
           <div className="mx-auto mb-8 max-w-2xl text-center">
             <Reveal className="flex justify-center">
-              <span className="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#0a9e85]">
+              <span className="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-menta-ink">
                 Visión integrada
               </span>
             </Reveal>

@@ -94,7 +94,7 @@ function MockBasico() {
         </div>
         {sessions.map((s) => (
           <div key={s.s} className="flex items-center gap-2.5 text-[0.85rem]">
-            <Calendar className="size-3.5 shrink-0 text-menta" />
+            <Calendar className="size-3.5 shrink-0 text-menta-ink" />
             <span className="font-semibold text-noche">{s.s}</span>
             <span className="flex-1 text-ink">{s.topic}</span>
             <span className="text-muted-ink">{s.date}</span>
@@ -121,7 +121,7 @@ function MockIntermedio() {
         <span className="text-sm font-semibold text-noche">
           Compromisos de la semana
         </span>
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-menta/15 px-2.5 py-1 text-[0.72rem] font-bold text-[#0a9e85]">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-menta/15 px-2.5 py-1 text-[0.72rem] font-bold text-menta-ink">
           <span className="size-1.5 rounded-full bg-menta" />
           En ruta
         </span>
@@ -133,7 +133,7 @@ function MockIntermedio() {
             <span
               className={
                 c.done
-                  ? "grid size-5 shrink-0 place-items-center rounded-md bg-menta/15 text-[#0a9e85]"
+                  ? "grid size-5 shrink-0 place-items-center rounded-md bg-menta/15 text-menta-ink"
                   : "grid size-5 shrink-0 place-items-center rounded-md bg-noche/[0.07] text-[0.7rem] font-extrabold text-muted-ink"
               }
             >
@@ -149,7 +149,7 @@ function MockIntermedio() {
           <div className="text-[0.7rem] font-bold text-muted-ink">
             Adopción de hábitos
           </div>
-          <div className="font-heading text-[1.25rem] text-[#0a9e85]">+24%</div>
+          <div className="font-heading text-[1.25rem] text-menta-ink">+24%</div>
         </div>
         <div className="rounded-[10px] border border-noche/10 bg-paper px-3 py-2.5">
           <div className="text-[0.7rem] font-bold text-muted-ink">
@@ -170,7 +170,7 @@ function MockAvanzado() {
     { role: "Gte. Finanzas", successor: "L.T.", ready: "1–2 años", tone: "muted" as const },
   ];
   const toneChip = {
-    ok: "bg-menta/15 text-[#0a9e85]",
+    ok: "bg-menta/15 text-menta-ink",
     warn: "bg-amber/15 text-amber",
     muted: "bg-noche/[0.06] text-muted-ink",
   };
@@ -216,7 +216,7 @@ function MockAvanzado() {
           <div className="text-[0.7rem] font-bold text-muted-ink">
             Cobertura de sucesión
           </div>
-          <div className="font-heading text-[1.25rem] text-[#0a9e85]">78%</div>
+          <div className="font-heading text-[1.25rem] text-menta-ink">78%</div>
         </div>
         <div className="rounded-[10px] border border-noche/10 bg-paper px-3 py-2.5">
           <div className="text-[0.7rem] font-bold text-muted-ink">

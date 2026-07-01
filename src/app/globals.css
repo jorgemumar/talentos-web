@@ -18,6 +18,7 @@
   --color-electric: #1b4fdc;
   --color-coral: #e8503a;
   --color-menta: #00c9a7;
+  --color-menta-ink: #0a7d6a; /* menta oscuro para texto sobre fondos claros (AA ≥4.5:1) */
   --color-grafito: #1e1e1e;
   --color-paper: #fbfaf8;
   --color-amber: #e0a02b;
@@ -169,5 +170,28 @@
   h2,
   h3 {
     @apply font-heading;
+  }
+
+  /* Foco visible y consistente para navegación por teclado (WCAG 2.4.7) */
+  :focus-visible {
+    outline: 2px solid var(--color-electric);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+/* Respeta prefers-reduced-motion: neutraliza animaciones/transiciones CSS.
+   Las animaciones JS (motion) se reducen vía <MotionConfig reducedMotion="user">. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: auto;
   }
 }

@@ -61,7 +61,7 @@ export function GdiPillars() {
                 )}
               />
               <div className="flex items-center justify-between">
-                <span className="text-[0.72rem] font-extrabold tracking-[0.04em] text-menta">
+                <span className="text-[0.72rem] font-extrabold tracking-[0.04em] text-menta-ink">
                   {p.n}
                 </span>
                 <span

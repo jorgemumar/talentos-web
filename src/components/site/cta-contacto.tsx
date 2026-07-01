@@ -55,15 +55,26 @@ export function CtaContacto() {
           <Reveal
             as="p"
             delay={0.16}
-            className="mt-5 max-w-[520px] text-pretty leading-relaxed text-white/75 sm:text-[1.08rem]"
+            className="mt-5 max-w-[540px] text-pretty leading-relaxed text-white/85 sm:text-[1.12rem]"
           >
-            Agenda un assessment sin costo: en una llamada de 30 minutos
+            Atraer, medir y desarrollar no son tres proveedores sueltos: son un
+            solo sistema. Mientras no lo instalas, cada silla clave vacía o mal
+            ocupada sigue cobrándote —en dinero, en tiempo y en las decisiones
+            que tu empresa no toma.
+          </Reveal>
+
+          <Reveal
+            as="p"
+            delay={0.22}
+            className="mt-4 max-w-[520px] text-pretty leading-relaxed text-white/70"
+          >
+            Empieza con un assessment sin costo: en una llamada de 30 minutos
             definimos el puesto contigo, acordamos el Scorecard y te mostramos
             lo que ya te está costando la silla vacía. Sin compromiso ni venta
             dura.
           </Reveal>
 
-          <Reveal delay={0.24} className="mt-8 flex flex-wrap gap-3">
+          <Reveal delay={0.3} className="mt-8 flex flex-wrap gap-3">
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -84,7 +95,7 @@ export function CtaContacto() {
             </a>
           </Reveal>
 
-          <Reveal as="p" delay={0.3} className="mt-6 text-sm text-white/55">
+          <Reveal as="p" delay={0.36} className="mt-6 text-sm text-white/55">
             Publicamos cómo pensamos el talento. Te leemos en los comentarios.
           </Reveal>
         </div>

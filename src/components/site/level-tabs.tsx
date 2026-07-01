@@ -122,7 +122,7 @@ export function LevelTabs() {
                   {s.desc}
                 </p>
                 {s.free && (
-                  <span className="mt-1.5 inline-block rounded-[5px] bg-menta/15 px-2 py-0.5 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] text-[#0a9e85]">
+                  <span className="mt-1.5 inline-block rounded-[5px] bg-menta/15 px-2 py-0.5 text-[0.62rem] font-extrabold uppercase tracking-[0.1em] text-menta-ink">
                     Sin costo
                   </span>
                 )}

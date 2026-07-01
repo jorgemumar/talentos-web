@@ -93,7 +93,7 @@ export function PruebaSocial() {
               <div
                 className={cn(
                   "font-heading text-[clamp(2rem,3.6vw,2.6rem)] font-semibold leading-none",
-                  m.menta ? "text-[#0a9e85]" : "text-noche",
+                  m.menta ? "text-menta-ink" : "text-noche",
                 )}
               >
                 {m.value}

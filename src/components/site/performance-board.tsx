@@ -50,7 +50,7 @@ export function PerformanceBoard() {
                 <div
                   className={cn(
                     "mt-0.5 font-heading text-2xl",
-                    t.menta ? "text-[#0a9e85]" : "text-noche",
+                    t.menta ? "text-menta-ink" : "text-noche",
                   )}
                 >
                   {t.value}

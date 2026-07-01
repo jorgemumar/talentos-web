@@ -85,6 +85,7 @@ export function ContactForm() {
             type="text"
             required
             autoComplete="name"
+            aria-label="Nombre"
             placeholder="Nombre"
             className={inputClass}
           />
@@ -92,6 +93,7 @@ export function ContactForm() {
             name="company"
             type="text"
             autoComplete="organization"
+            aria-label="Empresa"
             placeholder="Empresa"
             className={inputClass}
           />
@@ -101,12 +103,14 @@ export function ContactForm() {
           type="email"
           required
           autoComplete="email"
+          aria-label="Correo de trabajo"
           placeholder="Correo de trabajo"
           className={inputClass}
         />
         <textarea
           name="message"
           rows={3}
+          aria-label="¿Qué posición o reto de talento tienes hoy?"
           placeholder="¿Qué posición o reto de talento tienes hoy?"
           className={`${inputClass} resize-none`}
         />

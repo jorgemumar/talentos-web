@@ -19,6 +19,10 @@ const FAQS: { q: string; a: string }[] = [
     a: "Una agencia entrega CVs; nosotros entregamos decisiones. Cada finalista llega evaluado con un Scorecard ponderado de 12 criterios y un Paquete de Transferencia, y los tres socios firman cada shortlist. Además, no terminamos al firmar: la misma metodología mide y desarrolla a esa persona a lo largo de su ciclo. Un solo proveedor y un solo dato que sigue a la persona.",
   },
   {
+    q: "¿Para qué tamaño de empresa es TalentOS?",
+    a: "Para empresas medianas y PyMEs en crecimiento —de unas 50 a 500 personas— que ya no caben en lo improvisado, pero que no quieren la rigidez ni el costo de una gran consultora. Si contratas con frecuencia y estás abierto a profesionalizar tu talento, TalentOS es para ti.",
+  },
+  {
     q: "¿Cuánto tarda un proceso de headhunting?",
     a: "Depende del nivel del puesto. En el Nivel A (Ágil) presentamos un shortlist evaluado en 10–15 días. Los niveles Estratégico y Executive toman más tiempo por el mapeo de mercado, el assessment de liderazgo y el due diligence. En todos los casos sabes en qué etapa va el proceso en todo momento.",
   },

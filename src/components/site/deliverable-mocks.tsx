@@ -76,7 +76,7 @@ function MockScorecard() {
         <span className="text-sm font-semibold text-noche">
           Evaluación ponderada
         </span>
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-menta/15 px-2.5 py-1 text-[0.72rem] font-bold text-[#0a9e85]">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-menta/15 px-2.5 py-1 text-[0.72rem] font-bold text-menta-ink">
           <span className="size-1.5 rounded-full bg-menta" />
           {SCORECARD.status}
         </span>
@@ -97,7 +97,7 @@ function MockScorecard() {
           <div className="text-[0.74rem] font-bold text-muted-ink">
             SCORE PONDERADO
           </div>
-          <div className="font-heading text-[1.7rem] text-[#0a9e85]">
+          <div className="font-heading text-[1.7rem] text-menta-ink">
             {SCORECARD.score}%
           </div>
         </div>
@@ -178,7 +178,7 @@ function MockMercado() {
         <span className="font-bold text-electric">Mediana $820K</span>
         <span className="font-semibold text-noche">$1.05M</span>
       </div>
-      <div className="mb-5 inline-flex items-center gap-1.5 rounded-md bg-menta/10 px-2 py-1 text-[0.72rem] font-medium text-[#0a9e85]">
+      <div className="mb-5 inline-flex items-center gap-1.5 rounded-md bg-menta/10 px-2 py-1 text-[0.72rem] font-medium text-menta-ink">
         <span className="size-1.5 rounded-full bg-menta" />
         Tu rango objetivo · $780K – $900K
       </div>
@@ -194,7 +194,7 @@ function MockMercado() {
               <r.icon className="size-4 text-muted-ink" />
               {r.label}
             </span>
-            <span className={cn("font-semibold", r.menta ? "text-[#0a9e85]" : "text-noche")}>
+            <span className={cn("font-semibold", r.menta ? "text-menta-ink" : "text-noche")}>
               {r.value}
             </span>
           </div>
@@ -269,7 +269,7 @@ function MockShortlist() {
               {c.score}%
             </span>
             {c.tag && (
-              <span className="rounded bg-menta/15 px-1.5 py-0.5 text-[0.6rem] font-bold text-[#0a9e85]">
+              <span className="rounded bg-menta/15 px-1.5 py-0.5 text-[0.6rem] font-bold text-menta-ink">
                 {c.tag}
               </span>
             )}
@@ -312,7 +312,7 @@ function MockFicha() {
             "Liderazgo de equipos comerciales de 15+",
           ].map((t) => (
             <div key={t} className="flex items-start gap-2 text-[0.85rem] text-ink">
-              <Check className="mt-0.5 size-3.5 shrink-0 text-menta" strokeWidth={3} />
+              <Check className="mt-0.5 size-3.5 shrink-0 text-menta-ink" strokeWidth={3} />
               {t}
             </div>
           ))}
@@ -369,7 +369,7 @@ function MockOferta() {
           <span className="text-[0.8rem] font-semibold text-noche">
             Probabilidad de aceptación
           </span>
-          <span className="font-heading text-[1.4rem] text-[#0a9e85]">
+          <span className="font-heading text-[1.4rem] text-menta-ink">
             {accept}%
           </span>
         </div>
@@ -435,7 +435,7 @@ function MockTrazabilidad() {
         </div>
       </div>
       <div className="mt-5 flex items-center gap-1.5 border-t border-noche/10 pt-4 text-[0.78rem] text-muted-ink">
-        <Check className="size-3.5 text-menta" strokeWidth={3} />
+        <Check className="size-3.5 text-menta-ink" strokeWidth={3} />
         Cada avance y cada salida queda explicado · cero cajas negras.
       </div>
     </MockWindow>

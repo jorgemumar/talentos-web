@@ -91,7 +91,7 @@ function MockMetodologia() {
           </div>
         </div>
         <div className="text-right">
-          <div className="font-heading text-[1.6rem] leading-none text-[#0a9e85]">
+          <div className="font-heading text-[1.6rem] leading-none text-menta-ink">
             92%
           </div>
           <div className="text-[0.68rem] text-muted-ink">del bono objetivo</div>
@@ -145,9 +145,9 @@ function MockTecnologia() {
       </div>
 
       <div className="flex items-start gap-2.5 rounded-xl border border-menta/25 bg-menta/[0.07] px-3.5 py-3">
-        <Sparkles className="mt-0.5 size-4 shrink-0 text-menta" />
+        <Sparkles className="mt-0.5 size-4 shrink-0 text-menta-ink" />
         <p className="text-[0.84rem] leading-snug text-ink">
-          <b className="font-semibold text-[#0a9e85]">Insight IA · </b>
+          <b className="font-semibold text-menta-ink">Insight IA · </b>
           Riesgo de rotación en Comercial al alza. Sugerido: plan de retención
           para 3 perfiles clave este trimestre.
         </p>
@@ -258,7 +258,7 @@ function MockCambio() {
 
       <div className="mt-5 grid grid-cols-2 gap-2.5 border-t border-noche/10 pt-4">
         <div className="rounded-[11px] bg-menta/[0.08] p-3 text-center">
-          <div className="font-heading text-2xl text-[#0a9e85]">84%</div>
+          <div className="font-heading text-2xl text-menta-ink">84%</div>
           <div className="text-[0.7rem] font-medium text-muted-ink">Uso real</div>
         </div>
         <div className="rounded-[11px] bg-noche/[0.04] p-3 text-center">
