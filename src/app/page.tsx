@@ -1,6 +1,5 @@
 import { SiteHeader } from "@/components/site/site-header";
 import { Hero } from "@/components/site/hero";
-import { ClientLogos } from "@/components/site/client-logos";
 import { Categoria } from "@/components/site/categoria";
 import { Sistema } from "@/components/site/sistema";
 import { Headhunting } from "@/components/site/headhunting";
@@ -22,7 +21,6 @@ export default function Home() {
       <SiteHeader />
       <main className="flex-1">
         <Hero />
-        <ClientLogos />
         <Categoria />
         <Sistema />
         <Headhunting />

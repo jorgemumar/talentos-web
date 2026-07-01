@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const METRICS = [
   { value: "12", label: "criterios en el Scorecard ponderado" },
   { value: "10–15 días", label: "a un shortlist evaluado" },
-  { value: "hasta 120 días", label: "de garantía de permanencia", menta: true },
+  { value: "de 60 a 120 días", label: "de garantía según el nivel", menta: true },
 ];
 
 // Testimonios reales (nombre y empresa confirmados; cargos por confirmar).
