@@ -56,7 +56,10 @@
       "Bash(curl -s -o /dev/null -w \"recompilado http %{http_code}\\\\n\" http://localhost:3000/)",
       "Bash(echo \"=== cualquier imagen creada HOY en temporales del sistema ===\" *)",
       "Bash(command -v pdfimages)",
-      "Bash(node -e \"let f='src/app/page.tsx',s=require\\('fs'\\).readFileSync\\(f,'utf8'\\); s=s.replace\\('<main className=\\\\\"flex-1\\\\\">\\\\n        <Hero />','<main className=\\\\\"flex-1\\\\\">\\\\n        {/* TEMP */}\\\\n        <ClientLogos />\\\\n        <Hero />'\\); require\\('fs'\\).writeFileSync\\(f,s\\);\")"
+      "Bash(node -e \"let f='src/app/page.tsx',s=require\\('fs'\\).readFileSync\\(f,'utf8'\\); s=s.replace\\('<main className=\\\\\"flex-1\\\\\">\\\\n        <Hero />','<main className=\\\\\"flex-1\\\\\">\\\\n        {/* TEMP */}\\\\n        <ClientLogos />\\\\n        <Hero />'\\); require\\('fs'\\).writeFileSync\\(f,s\\);\")",
+      "Bash(node -e \"let f='src/app/page.tsx',s=require\\('fs'\\).readFileSync\\(f,'utf8'\\); s=s.replace\\('<main className=\\\\\"flex-1\\\\\">\\\\n        <Hero />','<main className=\\\\\"flex-1\\\\\">\\\\n        {/* TEMP */}\\\\n        <Faq />\\\\n        <Hero />'\\); require\\('fs'\\).writeFileSync\\(f,s\\);\")",
+      "Bash(curl -s http://localhost:3000/ -o /tmp/faqcheck.html)",
+      "Read(//tmp/**)"
     ]
   }
 }

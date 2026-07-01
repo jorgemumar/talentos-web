@@ -21,10 +21,54 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
+const SITE_URL = "https://talentos.work";
+const SITE_TITLE = "TalentOS — El sistema operativo de tu talento";
+const SITE_DESCRIPTION =
+  "La firma que diseña e instala el sistema operativo humano de tu empresa: atraer, medir y desarrollar talento como un solo ciclo, habilitado por IA. Headhunting estratégico, gestión del desempeño y desarrollo humano. Guadalajara y todo México.";
+
 export const metadata: Metadata = {
-  title: "TalentOS — El sistema operativo de tu talento",
-  description:
-    "La única firma que diseña e instala el sistema operativo humano: atraer, medir y desarrollar talento, integrados y habilitados por IA. Guadalajara y todo México de forma remota.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_TITLE,
+    template: "%s · TalentOS",
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: "TalentOS",
+  keywords: [
+    "TalentOS",
+    "headhunting",
+    "headhunting estratégico",
+    "reclutamiento ejecutivo",
+    "gestión del desempeño",
+    "desarrollo humano",
+    "evaluación de talento",
+    "people analytics",
+    "recursos humanos",
+    "Guadalajara",
+    "México",
+  ],
+  authors: [{ name: "TalentOS" }],
+  creator: "TalentOS",
+  publisher: "TalentOS",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    url: SITE_URL,
+    siteName: "TalentOS",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
 };
 
 export default function RootLayout({

@@ -36,9 +36,10 @@ export function Categoria() {
               delay={0.16}
               className="mt-5 max-w-lg text-pretty leading-relaxed text-muted-ink"
             >
-              El talento de tu empresa no se resuelve con servicios sueltos: se
-              gobierna con un sistema. Por eso TalentOS no encaja en las casillas
-              de siempre.
+              El talento de tu empresa no se resuelve comprando servicios
+              sueltos —una búsqueda por aquí, un curso por allá—: se maneja como
+              un sistema, donde cada etapa alimenta a la siguiente. Por eso
+              TalentOS no encaja en las casillas de siempre.
             </Reveal>
 
             <ul className="mt-8 flex flex-col gap-4">

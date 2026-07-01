@@ -32,7 +32,7 @@ const DIFFS: Diff[] = [
   {
     n: "05",
     title: "Escala por tecnología",
-    desc: "Boutique premium tecnificada: crecemos con automatización e IA, no contratando masivamente.",
+    desc: "Crecemos con automatización e IA, no contratando a decenas de reclutadores. Así mantenemos la atención cercana y el costo accesible a medida que crecemos.",
   },
   {
     n: "+",

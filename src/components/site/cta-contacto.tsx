@@ -57,8 +57,10 @@ export function CtaContacto() {
             delay={0.16}
             className="mt-5 max-w-[520px] text-pretty leading-relaxed text-white/75 sm:text-[1.08rem]"
           >
-            Empieza con un assessment sin costo: definimos el puesto, el
-            Scorecard y lo que ya te está costando no decidir. Sin compromiso.
+            Agenda un assessment sin costo: en una llamada de 30 minutos
+            definimos el puesto contigo, acordamos el Scorecard y te mostramos
+            lo que ya te está costando la silla vacía. Sin compromiso ni venta
+            dura.
           </Reveal>
 
           <Reveal delay={0.24} className="mt-8 flex flex-wrap gap-3">
