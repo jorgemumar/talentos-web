@@ -1,41 +1,44 @@
 import { Reveal } from "@/components/site/reveal";
 
-// PLACEHOLDER: reemplazar por los logos reales de clientes.
-// Ideal: subir SVG/PNG a /public y renderizarlos con <Image />.
-const LOGOS = ["Nordia", "Vantiq", "Meridian", "Kaizen&Co", "Solvia", "Aventa"];
+// Roster de clientes en texto (sin logos): empresa · ejecutivo · industria.
+// Industrias inferidas — confirmar/ajustar con el cliente.
+const CLIENTS = [
+  { company: "3V Estrategia", exec: "Rodolfo Valladolid", industry: "Consultoría" },
+  { company: "Multicable", exec: "Miguel Oyervides Cárdenas", industry: "Telecomunicaciones" },
+  { company: "CL Consultores", exec: "Edgar Cuevas", industry: "Servicios contables, fiscales y administrativos" },
+  { company: "VAR Bookkeeping", exec: "Juan Carlos Hernández", industry: "Bookkeeping y servicios financieros" },
+  { company: "Dental del Real", exec: "Francisco del Real", industry: "Salud dental" },
+  { company: "Aldora", exec: "Fernando González", industry: "Software y tecnología" },
+];
 
 export function ClientLogos() {
   return (
     <section className="border-t border-noche/10 bg-paper">
-      <div className="mx-auto w-full max-w-[1180px] px-5 py-12 sm:px-8">
+      <div className="mx-auto w-full max-w-[1180px] px-5 py-14 sm:px-8">
         <Reveal
           as="p"
           className="text-center text-[0.75rem] font-bold uppercase tracking-[0.18em] text-muted-ink"
         >
-          Empresas que confían en TalentOS
+          Han confiado en nosotros
         </Reveal>
 
-        <Reveal
-          delay={0.08}
-          className="mt-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 sm:gap-x-14"
-        >
-          {LOGOS.map((name) => (
-            <span
-              key={name}
-              className="font-heading text-xl font-semibold tracking-tight text-noche/30 transition-colors duration-200 hover:text-noche/60"
+        <div className="mt-9 grid grid-cols-1 gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
+          {CLIENTS.map((c, i) => (
+            <Reveal
+              key={c.company}
+              delay={0.05 * i}
+              className="flex flex-col items-center text-center"
             >
-              {name}
-            </span>
+              <div className="font-heading text-lg font-semibold text-noche">
+                {c.company}
+              </div>
+              <div className="mt-1 text-sm text-muted-ink">{c.exec}</div>
+              <div className="mt-1.5 max-w-[16rem] text-[0.8rem] font-semibold text-electric">
+                {c.industry}
+              </div>
+            </Reveal>
           ))}
-        </Reveal>
-
-        <Reveal
-          as="p"
-          delay={0.16}
-          className="mt-7 text-center text-[0.72rem] italic text-muted-ink/70"
-        >
-          Logos ilustrativos — pendientes de reemplazar con clientes reales.
-        </Reveal>
+        </div>
       </div>
     </section>
   );

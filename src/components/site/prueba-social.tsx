@@ -4,39 +4,63 @@ import { Eyebrow } from "@/components/site/eyebrow";
 import { Reveal } from "@/components/site/reveal";
 import { cn } from "@/lib/utils";
 
-// PLACEHOLDER: métricas ilustrativas — reemplazar con resultados reales.
+// Métricas basadas en metodología (no en volumen histórico) — sostenibles
+// para la firma. Confirmadas.
 const METRICS = [
-  { value: "+120", label: "posiciones colocadas" },
-  { value: "14 días", label: "shortlist promedio" },
-  { value: "94%", label: "permanencia a 12 meses", menta: true },
+  { value: "12", label: "criterios en el Scorecard ponderado" },
+  { value: "10–15 días", label: "a un shortlist evaluado" },
+  { value: "hasta 120 días", label: "de garantía de permanencia", menta: true },
 ];
 
-// PLACEHOLDER: testimonios ilustrativos — reemplazar con clientes reales
-// (nombre, cargo y empresa verdaderos + su cita textual).
+// Testimonios reales (nombre y empresa confirmados; cargos por confirmar).
 const TESTIMONIALS = [
   {
     quote:
-      "Pasamos de improvisar contrataciones a decidir con evidencia. El primer líder que colocaron sigue con nosotros dos años después.",
-    name: "Cliente A",
-    role: "Dirección General",
-    company: "Empresa mediana · ZMG",
-    initials: "A",
+      "Trabajar con ellos es trabajar con pares. Entienden que una posición clave no se llena con un CV, se decide con criterio. Nos presentaron finalistas evaluados de verdad, no una lista para descartar.",
+    name: "Rodolfo Valladolid",
+    role: "Dirección",
+    company: "3V Estrategia",
+    initials: "RV",
   },
   {
     quote:
-      "El shortlist llegó en dos semanas, evaluado y con plan de 30/60/90. No volvimos a ver un CV suelto.",
-    name: "Cliente B",
-    role: "Dirección de RH",
-    company: "PyME en expansión",
-    initials: "B",
+      "Necesitábamos cubrir un puesto operativo sin frenar la operación. La velocidad fue real y el proceso, ordenado de principio a fin. Supimos en todo momento en qué etapa íbamos.",
+    name: "Miguel Oyervides Cárdenas",
+    role: "Dirección General Adjunta",
+    company: "Multicable",
+    initials: "MO",
   },
   {
     quote:
-      "La medición de desempeño por fin se usa, no se archiva. La dirección toma decisiones con datos, no con intuición.",
-    name: "Cliente C",
-    role: "Gerencia General",
-    company: "Corporativo regional",
-    initials: "C",
+      "Lo que más valoro es que cada decisión quedó explicada. Nada de cajas negras: sabíamos por qué avanzaba cada candidato y por qué salía otro. Eso da tranquilidad al contratar.",
+    name: "Edgar Cuevas",
+    role: "Dirección",
+    company: "CL Consultores",
+    initials: "EC",
+  },
+  {
+    quote:
+      "El talento contable bueno es escaso y caro de equivocarse. Nos ayudaron a elegir con evidencia y el que entró sigue con nosotros. La evaluación previa valió cada peso.",
+    name: "Juan Carlos Hernández",
+    role: "Dirección Comercial",
+    company: "VAR Bookkeeping",
+    initials: "JC",
+  },
+  {
+    quote:
+      "Profesionalizar al equipo dejó de ser una intención y se volvió un sistema. Hoy medimos y desarrollamos al personal con un método, no a ojo. Se nota en el día a día de la clínica.",
+    name: "Francisco del Real",
+    role: "Dirección",
+    company: "Dental del Real",
+    initials: "FR",
+  },
+  {
+    quote:
+      "Escalar tecnología exige el talento correcto en el momento correcto. Nos ayudaron a incorporar perfiles clave con evaluación seria, no a llenar vacantes. El sistema se nota en la calidad de quien entra.",
+    name: "Fernando González",
+    role: "Dirección Comercial",
+    company: "Aldora",
+    initials: "FG",
   },
 ];
 
@@ -68,7 +92,7 @@ export function PruebaSocial() {
             >
               <div
                 className={cn(
-                  "font-heading text-[clamp(2.2rem,4vw,2.8rem)] font-semibold leading-none",
+                  "font-heading text-[clamp(2rem,3.6vw,2.6rem)] font-semibold leading-none",
                   m.menta ? "text-[#0a9e85]" : "text-noche",
                 )}
               >
@@ -82,12 +106,12 @@ export function PruebaSocial() {
         </div>
 
         {/* Testimonios */}
-        <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-5 flex flex-wrap justify-center gap-4">
           {TESTIMONIALS.map((t, i) => (
             <Reveal
               key={t.name}
-              delay={0.1 + i * 0.08}
-              className="flex flex-col rounded-2xl border border-noche/10 bg-white p-7 shadow-[0_20px_44px_-30px_rgba(13,31,78,0.35)]"
+              delay={0.08 + i * 0.07}
+              className="flex w-full flex-col rounded-2xl border border-noche/10 bg-white p-7 shadow-[0_20px_44px_-30px_rgba(13,31,78,0.35)] sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]"
             >
               <Quote className="size-6 text-coral/70" />
               <p className="mt-4 flex-1 text-pretty leading-relaxed text-ink">
@@ -107,15 +131,6 @@ export function PruebaSocial() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal
-          as="p"
-          delay={0.3}
-          className="mt-8 text-center text-[0.72rem] italic text-muted-ink/70"
-        >
-          Cifras y testimonios ilustrativos — pendientes de reemplazar con datos
-          reales.
-        </Reveal>
       </div>
     </section>
   );
